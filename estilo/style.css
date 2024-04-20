@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+/*PALETA DE CORES: ==================================================================================
+
+#D9D0C7
+#BF7665
+#A61C29
+#721716
+#black */
+
+/* FONTES ============================================================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); /* "Playfair Display" */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* "Montserrat" */
+
+/*VARIAVEIS ==========================================================================================*/
+
+:root{
+    --cor1: #D9D0C7;
+    --cor2: #BF7665;
+    --cor3: #A61C29;
+    --cor4: #721716;
+    --cor5: black;
+
+    --fonte-header: "Playfair Display";
+    --fonte-body: "Montserrat";
+}
+
+
+/* GERAL =============================================================================================*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat" ;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* BODY =============================================================================================*/
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor4);
+}
+
+main > section#fundo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    
+    background: url('../jpeg/fundo-portifolio.jpg') top center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.596);
+    
+    transform: translate(-50% , -50%);
+}
+
+/* IMAGEM =========================================================================================*/
+section#fundo > div#imagem{ 
+    position: absolute;
+    left: 50%;
+    top: 5%;
+
+    display: block;
+    background: url('../jpeg/logo-nr1-trans.png') top center no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    transform: translateX(-50%);
+}
+
+/*BOTAO =========================================================================================*/
+section#fundo > div.botao{ 
+    position: absolute;
+    left: 50%;
+    top: 35%;
+
+    background-color: var(--cor4);
+    width: 160px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+
+    transform: translateX(-50%);
+}
+
+section#fundo > div.botao:hover{
+    box-shadow: 0px 0px 15px white;
+    transform: translate(-50% , -15%);
+    transition: transform 0.5s;
+
+    background-color: var(--cor3);
+
+}
+
+div.botao > h1{
+    text-align: center;
+    font-family: var(--fonte-header);
+    color: white;
+    font-weight: normal;
+}
+
+/*REDES =============================================================================================*/
+section#fundo > div.redes{ 
+    position: absolute;
+    top: 80%;
+    left: 10%;
+
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+div.redes > a > img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+}
+
+div.redes > a > img:hover{
+    box-shadow: 0px 0px 10px var(--cor4);
+    transform: translate(0px , -5px);
+}
+
+/*CONFIRAÇÕES DE CADA BOTÃO SEPARADAMENTE ==========================================================*/
+
+section#fundo > div#sobremim{
+    position: absolute;
+    top: 45%;
+}
+
+/*CONFIRAÇÕES DE CADA REDE SEPARADAMENTE ==========================================================*/
+
+section#fundo > div#instagram{
+    position: absolute;
+    left: 32%;
+}

@@ -84,9 +84,9 @@ section#fundo > div#imagem{
 
 /*BOTAO =========================================================================================*/
 section#fundo > div.botao{ 
-    position: relative;
+    position: absolute;
     left: 50%;
-    top: 9%;
+    top: 35%;
 
     background-color: var(--cor4);
     width: 160px;
@@ -117,7 +117,7 @@ div.botao > h1{
 /*REDES =============================================================================================*/
 section#fundo > div.redes{ 
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 10%;
 
     overflow: hidden;
@@ -142,7 +142,7 @@ div.redes > a > img:hover{
 
 section#fundo > div#sobremim{
     position: absolute;
-    top: 45%;
+    top: 44%;
 }
 
 /*CONFIRAÇÕES DE CADA REDE SEPARADAMENTE ==========================================================*/
